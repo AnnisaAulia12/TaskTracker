@@ -1,0 +1,9 @@
+
+{
+  "appId": "com.tododish.app",
+  "appName": "Tododish",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http"
+  }
+}

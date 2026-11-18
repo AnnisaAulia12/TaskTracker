@@ -1,0 +1,125 @@
+
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #ffffff;
+  --border: #e5e4e7;
+
+  --accent: #171717;
+  --accent-bg: rgba(23, 23, 23, 0.08);
+  --accent-border: rgba(23, 23, 23, 0.5);
+
+  --code-bg: #f4f3ec;
+  --social-bg: rgba(244, 243, 236, 0.5);
+
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: light;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+@media (min-width: 900px) {
+  .main-layout-content .home-page,
+  .main-layout-content .tasks-layout,
+  .main-layout-content .schedule-layout,
+  .main-layout-content .account-layout {
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 36px;
+    padding-right: 36px;
+    box-sizing: border-box;
+  }
+
+  .main-layout-content .tasks-search,
+  .main-layout-content .tasks-filters {
+    width: 100%;
+    max-width: none;
+  }
+
+  .main-layout-content .today-tasks,
+  .main-layout-content .today-task-list,
+  .main-layout-content .tasks-list-container,
+  .main-layout-content .tasks-list,
+  .main-layout-content .schedule-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .main-layout-content .profile-summary-card,
+  .main-layout-content .account-information-section,
+  .main-layout-content .account-actions {
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+  }
+}

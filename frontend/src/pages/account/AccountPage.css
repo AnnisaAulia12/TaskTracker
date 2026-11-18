@@ -1,0 +1,371 @@
+
+.account-content {
+  --background: #ffffff;
+  --padding-bottom: 0;
+}
+
+.account-layout {
+  width: 100%;
+  max-width: 440px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 60px 12px 90px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.account-title {
+  flex-shrink: 0;
+  margin: 0 0 20px;
+  color: #080808;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.profile-summary-card {
+  width: 100%;
+  min-height: 160px;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: #eff0f2;
+  border-radius: 12px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dcdde0;
+  border-radius: 50%;
+  color: #171717;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.profile-summary-card h2 {
+  margin: 10px 0 5px;
+  color: #171717;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.profile-email {
+  margin: 0;
+  color: #555555;
+  font-size: 12px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.profile-member-since {
+  margin-top: 8px;
+  color: #777777;
+  font-size: 10px;
+}
+
+.account-information-section {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.account-information-section h2 {
+  margin: 0 0 14px;
+  color: #171717;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.account-information-card {
+  width: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  background: #eff0f2;
+  border-radius: 12px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+.account-information-row {
+  min-height: 70px;
+  padding: 13px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px solid #999999;
+  box-sizing: border-box;
+}
+
+.account-information-row:last-child {
+  border-bottom: none;
+}
+
+.account-information-row span {
+  color: #777777;
+  font-size: 11px;
+}
+
+.account-information-row strong {
+  color: #171717;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.account-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.account-logout-button,
+.account-delete-button {
+  width: 100%;
+  min-height: 42px;
+  border: none;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+.account-logout-button {
+  background: #000000;
+  color: #ffffff;
+}
+
+.account-delete-button {
+  background: #eff0f2;
+  color: #171717;
+}
+
+.account-logout-button:active,
+.account-delete-button:active {
+  transform: scale(0.99);
+}
+
+.account-message {
+  width: 100%;
+  min-height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eff0f2;
+  border-radius: 12px;
+  color: #555555;
+  font-size: 12px;
+  text-align: center;
+}
+
+.account-error {
+  color: #b42318;
+}
+
+.account-delete-button:disabled,
+.account-logout-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 360px) {
+  .account-layout {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .profile-summary-card {
+    min-height: 150px;
+  }
+
+  .account-information-row strong {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 600px) {
+  .account-layout {
+    max-width: 700px;
+    padding: 65px 28px 110px;
+  }
+
+  .account-title {
+    font-size: 30px;
+    margin-bottom: 26px;
+  }
+
+  .profile-summary-card {
+    min-height: 190px;
+    padding: 28px;
+    border-radius: 16px;
+  }
+
+  .profile-avatar {
+    width: 72px;
+    height: 72px;
+    font-size: 28px;
+  }
+
+  .profile-summary-card h2 {
+    font-size: 20px;
+  }
+
+  .profile-email {
+    font-size: 14px;
+  }
+
+  .profile-member-since {
+    font-size: 12px;
+  }
+
+  .account-information-section {
+    margin-top: 35px;
+  }
+
+  .account-information-section h2 {
+    font-size: 21px;
+    margin-bottom: 17px;
+  }
+
+  .account-information-card {
+    padding: 0 20px;
+    border-radius: 16px;
+  }
+
+  .account-information-row {
+    min-height: 76px;
+    padding: 15px 12px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .account-information-row span {
+    font-size: 13px;
+  }
+
+  .account-information-row strong {
+    max-width: 65%;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .account-actions {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 35px;
+  }
+
+  .account-logout-button,
+  .account-delete-button {
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  .account-message {
+    min-height: 180px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 900px) {
+  .account-layout {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 42px 44px 78px;
+    align-items: stretch;
+  }
+
+  .account-title {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .profile-summary-card {
+    width: 100%;
+    max-width: none;
+    min-height: 210px;
+    align-self: stretch;
+  }
+
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+  }
+
+  .profile-summary-card h2 {
+    font-size: 22px;
+  }
+
+  .profile-email {
+    font-size: 14px;
+  }
+
+  .account-information-section {
+    width: 100%;
+    max-width: none;
+    align-self: stretch;
+    margin-top: 40px;
+  }
+
+  .account-information-section h2 {
+    font-size: 22px;
+  }
+
+  .account-information-card {
+    width: 100%;
+    max-width: none;
+    padding: 0 24px;
+  }
+
+  .account-information-row {
+    min-height: 82px;
+    padding: 16px;
+  }
+
+  .account-information-row span {
+    font-size: 14px;
+  }
+
+  .account-information-row strong {
+    font-size: 15px;
+  }
+
+  .account-actions {
+    width: 100%;
+    max-width: none;
+    align-self: stretch;
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .account-logout-button,
+  .account-delete-button {
+    min-height: 50px;
+    font-size: 15px;
+  }
+
+  .account-layout > .profile-summary-card,
+  .account-layout > .account-information-section,
+  .account-layout > .account-actions {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

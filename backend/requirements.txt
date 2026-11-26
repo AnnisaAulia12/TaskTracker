@@ -26,3 +26,4 @@ websockets==17.4
 PyJWT
 argon2-cffi
 pwdlib[argon2]==0.4.2
+python-multipart

@@ -26,6 +26,7 @@ app = FastAPI(
 
 
 # Mengaktifkan CORS
+# Mengaktifkan CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -37,12 +38,15 @@ app.add_middleware(
         "http://localhost:3000",
         "http://127.0.0.1:3000",
 
-        # Web yang sedang digunakan
+        # Web development
         "http://localhost:5174",
         "http://127.0.0.1:5174",
 
         # Android Capacitor
-        "http://localhost"
+        "http://localhost",
+
+        # Frontend Vercel
+        "https://task-tracker-qsim.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
